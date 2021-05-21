@@ -39,30 +39,30 @@
     #sleep(.5)
 
 
-from gpiozero import LED
-from time import sleep
+#from gpiozero import LED
+#from time import sleep
 
-led1=LED(2)
-led2=LED(3)
-led3=LED(4)
+#led1=LED(2)
+#led2=LED(3)
+#led3=LED(4)
 #led4=
 #led5=
 #led6=
 #led7=
 
-for i in range(0,3):
-    led1.on()
-    sleep(1)
-    led1.off()
-    sleep(1)
-    led2.on()
-    sleep(1)
-    led2.off()
-    sleep(1)
-    led3.on()
-    sleep(1)
-    led3.off()
-    sleep(1)
+#for i in range(0,3):
+#    led1.on()
+#    sleep(1)
+#    led1.off()
+#    sleep(1)
+#    led2.on()
+#    sleep(1)
+#    led2.off()
+#    sleep(1)
+#    led3.on()
+#    sleep(1)
+#    led3.off()
+#    sleep(1)
  #   led4.on()
   #  sleep(1)
    # led4.off()
@@ -80,3 +80,13 @@ for i in range(0,3):
   #  led7.off()
    # sleep(1)
  
+ 
+notes=["c","c","d","c","f","e","c","c","d","c","g","f","c","c","c","a","f","e","d","b","b","a","f","g","f"]
+
+
+for i in notes:
+    if i == "a":
+        print("a")
+    if i == "b":
+        print("b")
+    
