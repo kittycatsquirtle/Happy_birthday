@@ -89,4 +89,14 @@ for i in notes:
         print("a")
     if i == "b":
         print("b")
+    if i == "c":
+        print("c")
+    if i == "d":
+        print("d")
+    if i == "e":
+        print("e")
+    if i == "f":
+        print("f")
+    if i == "g":
+        print("g")
     
