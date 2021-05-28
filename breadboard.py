@@ -80,23 +80,54 @@
   #  led7.off()
    # sleep(1)
  
+eighth=0.5
+quarter=1
+half=2
  
 notes=["c","c","d","c","f","e","c","c","d","c","g","f","c","c","c","a","f","e","d","b","b","a","f","g","f"]
+times=[eighth,eighth,quarter,quarter,quarter,half,eighth,eighth,quarter,quarter,quarter,half,eighth,eighth,quarter,quarter,quarter,quarter,quarter,eighth,eighth,quarter,quarter,quarter,half]
 
+from gpiozero import LED
+from time import sleep
 
-for i in notes:
-    if i == "a":
-        print("a")
-    if i == "b":
-        print("b")
-    if i == "c":
-        print("c")
-    if i == "d":
-        print("d")
-    if i == "e":
-        print("e")
-    if i == "f":
-        print("f")
-    if i == "g":
-        print("g")
+ledA=LED(2)
+ledB=LED(3)
+ledC=LED(4)
+ledD=LED(17)
+ledE=LED(27)
+ledF=LED(22)
+ledG=LED(10)
+
+for i in range(len(notes)):
+    if notes[i] == "a":
+        ledA.on()
+        sleep(times[i])
+        ledA.off()
+    if notes[i] == "b":
+        ledB.on()
+        sleep(times[i])
+        ledB.off()
+    if notes[i] == "c":
+        ledC.on()
+        sleep(times[i])
+        ledC.off()
+    if notes[i] == "d":
+        ledD.on()
+        sleep(times[i])
+        ledD.off()
+    if notes[i] == "e":
+        ledE.on()
+        sleep(times[i])
+        ledE.off()
+    if notes[i] == "f":
+        ledF.on()
+        sleep(times[i])
+        ledF.off()
+    if notes[i] == "g":
+        ledG.on()
+        sleep(times[i])
+        ledG.off()
+    
+        
+#for i in range(0,8):
     
